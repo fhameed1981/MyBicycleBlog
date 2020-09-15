@@ -1,0 +1,226 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align:center;
+}
+
+h1,
+h2 {
+  color: #6f706f;
+}
+
+h2,
+h6 {
+  font-weight: 400;
+  text-align:center;
+  font-style: bold;
+
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  gap: 2rem;
+  font-family:  "Segoe UI","Open Sans", "Helvetica Neue", sans-serif;
+  color: #171927;
+}
+
+/**********header**********/
+
+header {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+}
+
+header nav h1 {
+  color: #fff;
+}
+
+.fas {
+  align-self: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/**********main**********/
+
+.main {
+  display: grid;
+  grid-template-columns: 4fr;/*fahad made change of 1fr here*/
+  width: 90%;
+  gap: 1.5rem;
+  margin: auto;
+}
+
+/**********articles**********/
+
+.main .articles {
+  display: grid;
+  grid-template-columns: 1fr ; /*fahad made change of 1 fr here */
+  gap: 2rem;
+}
+
+.articles h6 {
+  font-size: 1rem;
+}
+
+/**********cards**********/
+
+.main .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card > * {
+  margin-bottom: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+border-radius: 5%;
+}
+
+.card p {
+  line-height: 1.8rem;
+  text-decoration: underline;
+}
+
+.card button {
+  margin-bottom: 0;
+}
+
+.icons {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 3;
+}
+
+.far {
+  padding-right: 0.3rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  background: #ddd;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/**********aside**********/
+
+aside {
+  text-align: center;
+}
+
+aside img {
+  width: 80%;
+}
+
+/**********footer**********/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+
+footer .main-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.main-footer div:nth-child(2) {
+  align-self: center;
+}
+
+.fab {
+  margin-left: 2rem;
+  font-size: 2em;
+  color: #6f706f;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  header img {
+    height: 75vh;
+  }
+  .main {
+    grid-template-columns: 1fr;
+  }
+  aside img {
+    width: 50%;
+  }
+  footer .newsletter {
+    width: 70%;
+  }
+}
+
+@media (max-width: 769px) {
+  header img {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    height: 50vh;
+  }
+  .main .cards {
+    grid-template-columns: 1fr;
+  }
+  .newsletter {
+    width: 100%;
+  }
+}
