@@ -1,3 +1,10 @@
+@import "blogstyles1.css";
+@import "mtb.css";
+@import "recreation.css";
+@import "trips.css";
+@import "rooftop.css";
+
+
 html {
   box-sizing: border-box;
 }
@@ -222,5 +229,6 @@ footer .main-footer {
   }
   .newsletter {
     width: 100%;
+    align-items: center;
   }
 }
